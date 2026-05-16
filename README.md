@@ -5,6 +5,8 @@
 ![Telegram](https://img.shields.io/badge/Telegram-@mybiopac-blue?logo=telegram&style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
+[🇷🇺 Русский](ReadmeRu.md) | [🇺🇦 Українська](ReadmeUk.md) | [🇧🇾 Беларуская](ReadmeBe.md)
+
 **TabPac** is a modern, lightweight, and highly customizable Minecraft plugin for Paper/Spigot servers (1.21.x) that manages your Tablist and Sidebar Scoreboard with style. It's designed to be a "branded" alternative to popular tab plugins, featuring built-in animation support, multi-language capabilities, and deep integration with LuckPerms and PlaceholderAPI.
 
 ## ✨ Features
