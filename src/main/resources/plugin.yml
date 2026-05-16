@@ -1,0 +1,23 @@
+name: TabPac
+version: '${version}'
+
+main: pac.chromium.TabPac.TabPac
+api-version: '1.21.1'
+load: POSTWORLD
+softdepend: [PlaceholderAPI]
+
+commands:
+  tabpac:
+    description: Main command for TabPac
+    aliases: [tpac]
+    permission: tabpac.use
+
+permissions:
+  tabpac.use:
+    description: Allows use of /tabpac
+    default: true
+  tabpac.reload:
+    description: Allows reloading the plugin
+    default: op
+
+authors: [ PacHub228 ]

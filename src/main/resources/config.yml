@@ -1,0 +1,60 @@
+# TabPac Configuration
+# Use & for color codes or MiniMessage (if supported)
+
+# Available languages: en, ru, uk, be
+language: ru
+
+# Group priority for sorting in TAB (from highest to lowest)
+groups-priority:
+  - default
+
+branding:
+  logo: "&b&lTab&f&lPac"
+  prefix: "&8[&bTabPac&8] &f"
+
+tablist:
+  header:
+    - ""
+    - "%animation:logo%"
+    - "&7Welcome, &b%player_name%&7!"
+    - "&7Online: &f%server_online%&7/&f%server_max_players%"
+    - ""
+  footer:
+    - ""
+    - "&7Join our Telegram: &b@mybiopac"
+    - "&7Ping: &f%player_ping%ms"
+    - ""
+
+animations:
+  logo:
+    update-interval-ticks: 5
+    frames:
+      - "&b&lT&f&labPac"
+      - "&f&lT&b&la&f&lbPac"
+      - "&f&lTa&b&lb&f&lPac"
+      - "&f&lTab&b&lP&f&lac"
+      - "&f&lTabP&b&la&f&lc"
+      - "&f&lTabPa&b&lc"
+
+scoreboard:
+  enabled: true
+  title: "&b&lTab&f&lPac"
+  update-interval-ticks: 20
+  lines:
+    - "&7&m----------------"
+    - "&fPlayer: &b%player_name%"
+    - "&fRank: %luckperms_prefix%"
+    - ""
+    - "&fOnline: &b%server_online%"
+    - "&fPing: &b%player_ping%ms"
+    - ""
+    - "&b@mybiopac"
+    - "&7&m----------------"
+
+afk:
+  enabled: true
+  prefix: "&7[AFK] "
+  # If true, uses EssentialsX AFK status if available
+  use-essentials: true
+
+update-interval-ticks: 20
