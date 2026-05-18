@@ -37,7 +37,7 @@
 The `config.yml` is simple and powerful:
 
 ```yaml
-language: ru # en, ru, uk, be
+language: start # en, ru, uk, be
 
 groups-priority:
   - admin
@@ -60,7 +60,7 @@ animations:
 
 ## 📦 Installation
 
-1.  Download the latest `TabPac.jar`.
+1.  Download the latest `TabPac-1.0.0-rec.2.jar`.
 2.  Place it in your server's `plugins` folder.
 3.  Install [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) and [LuckPerms](https://luckperms.net/).
 4.  Restart the server.
