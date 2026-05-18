@@ -1,8 +1,8 @@
 # TabPac Configuration
 # Use & for color codes or MiniMessage (if supported)
 
-# Available languages: en, ru, uk, be
-language: ru
+# Available languages: start, en, ru, uk, be
+language: start
 
 # Group priority for sorting in TAB (from highest to lowest)
 groups-priority:

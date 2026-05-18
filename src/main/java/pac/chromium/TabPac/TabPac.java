@@ -35,6 +35,26 @@ public final class TabPac extends JavaPlugin {
         this.tabManager = new TabManager(this);
         this.tabManager.startTask();
         
+        // Start Reminder Task
+        getServer().getScheduler().runTaskTimer(this, () -> {
+            if (getConfig().getString("language", "start").equalsIgnoreCase("start")) {
+                String prefix = messageManager.getPrefix();
+                String en = messageManager.getMessage("lang-reminder-en");
+                String ru = messageManager.getMessage("lang-reminder-ru");
+                String uk = messageManager.getMessage("lang-reminder-uk");
+                String be = messageManager.getMessage("lang-reminder-be");
+                
+                for (org.bukkit.entity.Player player : getServer().getOnlinePlayers()) {
+                    if (player.isOp()) {
+                        player.sendMessage(ColorUtils.format(prefix + en));
+                        player.sendMessage(ColorUtils.format(prefix + ru));
+                        player.sendMessage(ColorUtils.format(prefix + uk));
+                        player.sendMessage(ColorUtils.format(prefix + be));
+                    }
+                }
+            }
+        }, 0L, 600L); // 600 ticks = 30 seconds
+        
         // Start Animation and Scoreboard tasks
         getServer().getScheduler().runTaskTimerAsynchronously(this, () -> {
             animationManager.update();
