@@ -169,7 +169,7 @@ public class TabManager {
     }
 
     public void startTask() {
-        int interval = plugin.getConfig().getInt("update-interval-ticks", 20);
-        Bukkit.getScheduler().runTaskTimerAsynchronously(plugin, this::updateAll, 0L, (long) interval);
+        int interval = Math.max(1, plugin.getConfig().getInt("update-interval-ticks", 20));
+        Bukkit.getScheduler().runTaskTimer(plugin, this::updateAll, 0L, interval);
     }
 }

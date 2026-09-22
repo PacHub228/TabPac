@@ -4,7 +4,7 @@ version: '${version}'
 main: pac.chromium.TabPac.TabPac
 api-version: '1.21.1'
 load: POSTWORLD
-softdepend: [PlaceholderAPI]
+depend: [PlaceholderAPI]
 
 commands:
   tabpac:
@@ -18,6 +18,9 @@ permissions:
     default: true
   tabpac.reload:
     description: Allows reloading the plugin
+    default: op
+  tabpac.admin:
+    description: Allows administrative TabPac actions and notifications
     default: op
 
 authors: [ PacHub228 ]

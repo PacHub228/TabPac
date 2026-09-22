@@ -55,11 +55,11 @@ public final class TabPac extends JavaPlugin {
             }
         }, 0L, 600L); // 600 ticks = 30 seconds
         
-        // Start Animation and Scoreboard tasks
-        getServer().getScheduler().runTaskTimerAsynchronously(this, () -> {
+        // Bukkit entities and scoreboards are not thread-safe. Keep all access on the server thread.
+        getServer().getScheduler().runTaskTimer(this, () -> {
             animationManager.update();
             scoreboardManager.updateAll();
-        }, 0L, 1L); // Fast update for animations, scoreboard has its own interval logic if needed
+        }, 0L, 1L);
         
         getServer().getPluginManager().registerEvents(new TabListener(this), this);
         

@@ -58,7 +58,7 @@ animations:
 
 ## 📦 Встановлення
 
-1.  Завантажте останню версію `TabPac-1.0.0-rec.2.jar`.
+1.  Завантажте останню версію `TabPac-1.1-SS.jar`.
 2.  Помістіть файл у папку `plugins` вашого сервера.
 3.  Встановіть [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) та [LuckPerms](https://luckperms.net/).
 4.  Перезапустіть сервер.

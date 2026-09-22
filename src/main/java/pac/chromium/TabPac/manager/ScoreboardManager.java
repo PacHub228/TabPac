@@ -33,7 +33,7 @@ public class ScoreboardManager {
         }
 
         ticks++;
-        int interval = plugin.getConfig().getInt("scoreboard.update-interval-ticks", 20);
+        int interval = Math.max(1, plugin.getConfig().getInt("scoreboard.update-interval-ticks", 20));
         if (ticks < interval) {
             // Still update existing scoreboards to refresh animations if they are in the title
             for (Player player : Bukkit.getOnlinePlayers()) {
